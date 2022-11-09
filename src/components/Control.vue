@@ -1,12 +1,12 @@
 <template>
-  <div class="control" :class="{ control__playing: store.state.isPlaying }">
-    <div class="control_btn control_btn__side" @click="handlePrev">
+  <div class="control">
+    <div class="control_btn" @click="handlePrev">
       <i class="fa fa-backward" />
     </div>
     <div class="control_btn" @click="handlePlay">
-      <span class="play-btn" />
+      <span class="play-btn" :class="{ control__playing: store.state.isPlaying }" />
     </div>
-    <div class="control_btn control_btn__side" @click="handleNext">
+    <div class="control_btn" @click="handleNext">
       <i class="fa fa-forward" />
     </div>
   </div>
@@ -49,7 +49,7 @@ const handleNext = () => {
     border-radius: 4px;
     margin: 2px;
     color: #ccc;
-    font-size: 16px;
+    font-size: 22px;
     transition: background-color 0.6s ease;
 
     &:hover {
@@ -105,24 +105,18 @@ const handleNext = () => {
         transition: all 0.2s ease;
       }
     }
-  }
 
-  .control_btn__side {
-    font-size: 14px;
-  }
-}
+    .control__playing {
+      &::before {
+        border-width: 0 0 0 6px;
+        height: 20px;
+        left: 5px;
+      }
 
-.control__playing {
-  .play-btn {
-    &::before {
-      border-width: 0 0 0 6px;
-      height: 20px;
-      left: 5px;
-    }
-
-    &::after {
-      opacity: 1;
-      transform: scale(1);
+      &::after {
+        opacity: 1;
+        transform: scale(1);
+      }
     }
   }
 }

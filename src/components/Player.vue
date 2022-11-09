@@ -23,10 +23,8 @@ import ProgressBar from './ProgressBar.vue'
   position: relative;
   display: flex;
   border-radius: 8px;
-  width: 300px;
-  height: 75px;
-  max-width: 300px;
-  max-height: 75px;
+  width: 450px;
+  height: 120px;
   background-color: white;
   box-shadow: 0 30px 60px rgba(0, 0, 0, 0.12), 0 20px 20px rgba(95, 23, 101, 0.2);
 

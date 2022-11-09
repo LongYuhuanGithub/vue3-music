@@ -50,24 +50,22 @@ onMounted(() => {
 <style lang="scss" scoped>
 .progress {
   border-radius: 6px 6px 0 0;
-  padding-left: 123px;
-  padding-right: 12px;
+  padding-left: 160px;
+  padding-right: 10px;
   height: 100%;
   background-color: rgba(255, 255, 255, 0.5);
   transition: all 0.6s ease;
 
   .progress_title {
     padding-top: 6px;
-    font-size: 12px;
+    font-size: 18px;
     font-weight: bold;
-    overflow: hidden;
-    text-overflow: ellipsis;
   }
 
   .progress_text {
     padding-top: 2px;
     padding-left: 2px;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: bold;
     color: #ccc;
     transform-origin: left top;
@@ -88,6 +86,6 @@ onMounted(() => {
 }
 
 .progress__playing {
-  transform: translateY(-100%);
+  transform: translateY(-80%);
 }
 </style>

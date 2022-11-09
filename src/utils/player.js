@@ -3,11 +3,11 @@ class Dispatcher {
     this.handlers = []
   }
 
-  listen (handler) {
+  listen(handler) {
     this.handlers.push(handler)
   }
 
-  emit (...args) {
+  emit(...args) {
     this.handlers.forEach(handler => {
       handler(...args)
     })
@@ -34,7 +34,7 @@ class Player {
     this.onReady = new Dispatcher()
   }
 
-  async readAudioBuffer (file) {
+  async readAudioBuffer(file) {
     return new Promise((resolve, reject) => {
       const reader = new FileReader()
       reader.onload = async evt => {
@@ -47,7 +47,7 @@ class Player {
     })
   }
 
-  async append (file) {
+  async append(file) {
     const isEmpty = this.isEmpty
     this.playList.push({
       file,

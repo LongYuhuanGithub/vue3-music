@@ -13,7 +13,7 @@
       id="file"
       ref="file"
       type="file"
-      accept=".mp3"
+      accept=".wav,.midi,.mp3,.mp4,.vqf,.ogg,.flac"
       multiple
       @change="handleChange"
     />
