@@ -1,9 +1,10 @@
 import { createStore } from 'vuex'
 
 const COVER_URL = [
-  require('@/assets/images/cover.jpg'),
-  require('@/assets/images/cover2.jpg'),
-  require('@/assets/images/cover3.jpg')
+  require('@/assets/images/1.jpg'),
+  require('@/assets/images/2.jpg'),
+  require('@/assets/images/3.jpg'),
+  require('@/assets/images/4.jpg')
 ]
 
 export default createStore({
