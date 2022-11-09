@@ -1,6 +1,6 @@
 <template>
   <div class="progress" :class="{ progress__playing: store.state.isPlaying }">
-    <h2 class="progress_title">{{ formatName(name) }}</h2>
+    <h2 class="progress_title ellipsis-1">{{ formatName(name) }}</h2>
     <p class="progress_text">
       {{ formatTime(position) }} / {{ formatTime(duration) }}
     </p>
@@ -70,7 +70,6 @@ onMounted(() => {
     font-size: 12px;
     font-weight: bold;
     color: #ccc;
-    transform: scale(0.6);
     transform-origin: left top;
   }
 

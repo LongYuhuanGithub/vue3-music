@@ -103,6 +103,15 @@ button {
   }
 }
 
+// 一行文字溢出显示省略号的类名
+.ellipsis-1 {
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
 // 两行文字溢出显示省略号的类名
 .ellipsis-2 {
   display: -webkit-box;
